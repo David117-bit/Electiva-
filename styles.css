@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: grid;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: black;
+    color: white;
+  }
+  
+  .Davidlogo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .Davidmenu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* HERO */
+  .Davidhero {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* PORTAFOLIO */
+  .Davidportafolio {
+    padding: 30px;
+  }
+  
+  .Davidgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .item {
+    background: lightgray;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .item1 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfHLBF3Q4fQlOpSF69_qoT8zGLGVE7U1tlFg&s");
+  }
+  
+  .item2 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS46j_lR-XYMgW3JJjKQtshD4nKBhNl4Sgd3A&s");
+  }
+  
+  .item3 {
+    background-image: url("https://arturocalle.vtexassets.com/arquivos/ids/651548-800-1067?v=638567519051170000&width=800&height=1067&aspect=true");
+  }
+  
+  .item4 {
+    background-image: url("https://m.media-amazon.com/images/I/41TkkLgto3L._AC_.jpg");
+  }
+  
+  .item5 {
+    background-image: url("https://media.vogue.mx/photos/5ffe0802f31e4a992aadc1c4/16:9/w_2991,h_1682,c_limit/Su%C3%A9teres-tejidos-que-est%C3%A1n-de-moda-Carolina-Herrera-Resort-2021.jpg");
+  }
+  
+  .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* CHANGELOG */
+  .changelog-container {
+    background-color: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+  }
+  
+  .timeline {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ddd;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 0;
+  }
+  
+  .date {
+    font-size: 14px;
+    color: gray;
+    width: 40%;
+    text-align: right;
+    padding-right: 10px;
+  }
+  
+  .circle {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .content {
+    font-size: 16px;
+    width: 40%;
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .changelog-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .changelog-button:hover {
+    background-color: #333;
+  }
+  
+  /* TASK TRACKER */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 207, 207);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(82, 71, 71, 0.1);
+    width: 400px;
+    margin: 40px auto;
+  }
+  
+  .input-group {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+  }
+  
+  input[type='text'] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #121212;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #000000;
+    color: rgb(255, 249, 249);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  
+  button#addTaskBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+  
+  button:hover {
+    background-color: #100f0f;
+  }
+  
+  ul {
+    list-style: none;
+    width: 100%;
+  }
+  
+  li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000000;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+  }
+  
+  .checkbox {
+    margin-right: 10px;
+  }
+  
+  .delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ce2c31;
+    display: flex;
+    align-items: center;
+  }
+  
+  .delete-btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: #787878;
+  }
+  
+  #taskList li span {
+    flex-grow: 1;
+  }
+  
+  /* FOOTER */
+  footer {
+    background: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .Davidmenu-toggle {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: black;
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .Davidgrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  

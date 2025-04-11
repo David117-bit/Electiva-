@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelCraft Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-links").classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="Davidlogo">PixelCraft Studio</div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="Davidmenu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <section class="Davidhero">
+        <h1>CREAMOS TU MARCA PERFECTA</h1>
+    </section>
+
+    <section class="Davidportafolio">
+        <h2>Nuestros Productos</h2>
+        <div class="Davidgrid">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+            <div class="item item5"></div>
+            <div class="item more">+</div>
+        </div>
+    </section>
+
+    <!-- Changelog -->
+    <section class="changelog-container">
+        <h1>Changelog</h1>
+        <p class="subtitle">Here's everything we have shipped in the past few days</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="date">September 3, 2024</div>
+                <div class="circle"></div>
+                <div class="content">Announcing Projects on Frontend Roadmap</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">August 28, 2024</div>
+                <div class="circle"></div>
+                <div class="content">Build your learning habits with learning streaks</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">August 25, 2024</div>
+                <div class="circle"></div>
+                <div class="content">Git and GitHub Roadmap</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">August 22, 2024</div>
+                <div class="circle"></div>
+                <div class="content">Submit your project solution and get feedback</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">August 15, 2024</div>
+                <div class="circle"></div>
+                <div class="content">Backend Project Ideas</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">August 10, 2024</div>
+                <div class="circle"></div>
+                <div class="content">Redis roadmap</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">August 1, 2024</div>
+                <div class="circle"></div>
+                <div class="content">Changelog page to help you stay in the loop</div>
+            </div>
+        </div>
+        <button class="changelog-button">Visit Complete Changelog</button>
+    </section>
+
+    <div class="container">
+        <h1>Añade a tu carrito</h1>
+        <div class="input-group">
+          <input id="taskInput" type="text" placeholder="Start writing and press enter to create task" />
+          <button id="addTaskBtn">
+            <svg width="24" height="24" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
+                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <ul id="taskList"></ul>
+      </div>
+
+    <footer>
+        <div class="Davidlogo">PixelCraft Studio</div>
+        <p>Transformamos ideas en identidad visual</p>
+    </footer>
+    <script src="java.js"></script>
+</body>
+</html>
+    

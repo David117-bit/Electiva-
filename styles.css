@@ -11,7 +11,6 @@
     background-color: #f9f9f9;
   }
   
-  /* HEADER */
   header {
     display: flex;
     justify-content: space-between;
@@ -46,7 +45,6 @@
     cursor: pointer;
   }
   
-  /* HERO */
   .Davidhero {
     background: #f4f4f4;
     padding: 50px 20px;
@@ -54,7 +52,6 @@
     font-weight: bold;
   }
   
-  /* PORTAFOLIO */
   .Davidportafolio {
     padding: 30px;
   }
@@ -104,7 +101,7 @@
     font-weight: bold;
   }
   
-  /* CHANGELOG */
+
   .changelog-container {
     background-color: white;
     width: 450px;
@@ -286,15 +283,13 @@
   #taskList li span {
     flex-grow: 1;
   }
-  
-  /* FOOTER */
+
   footer {
     background: black;
     color: white;
     padding: 20px;
   }
-  
-  /* RESPONSIVE */
+
   @media (max-width: 768px) {
     .Davidmenu-toggle {
       display: block;
